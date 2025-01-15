@@ -21,7 +21,7 @@ function App() {
             Save Diagram
           </button>
         </div>
-        <BPMNModeler className="h-[10000px] border border-gray-200 rounded bpmn-modeler" />
+        <BPMNModeler />
       </div>
     </div>
   );
