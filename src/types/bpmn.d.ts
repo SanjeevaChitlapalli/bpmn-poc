@@ -16,3 +16,7 @@ declare module "bpmn-js" {
     destroy(): void;
   }
 }
+
+declare module "bpmn-js-properties-panel";
+declare module "bpmn-js-properties-panel/lib/provider/bpmn";
+declare module "bpmn-js-properties-panel/lib/provider/camunda";
