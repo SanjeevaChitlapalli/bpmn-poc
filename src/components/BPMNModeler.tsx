@@ -67,7 +67,7 @@ interface BPMNModelerProps {
   className?: string;
 }
 
-export const BPMNModeler: React.FC<BPMNModelerProps> = ({ className }) => {
+export const BPMNModeler: React.FC<BPMNModelerProps> = ({ className = "" }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const propertiesPanelRef = useRef<HTMLDivElement>(null);
   const modelerRef = useRef<BpmnModeler | null>(null);
@@ -117,7 +117,7 @@ export const BPMNModeler: React.FC<BPMNModelerProps> = ({ className }) => {
   }, []);
 
   return (
-    <div className="flex h-[100dvh]">
+    <div className={className + "flex h-[100dvh]"}>
       <div ref={containerRef} className="flex-grow">
         {/* BPMN modeler will be rendered here */}
       </div>
